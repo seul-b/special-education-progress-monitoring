@@ -27,7 +27,7 @@ This app is designed specifically for special education professionals, providing
 SEPM aims to streamline data collection and analysis, focusing on evidence-based teaching practices and effective data management. By incorporating systematic instructional strategies, the app empowers educators to create tailored instructional plans for students while facilitating progress monitoring and data-driven decision-making.
 
 # Information for Users
-Step 1: Access the main page and locate the hyperlink titled "Systematic Instructional Procedures Guide". This link provides comprehensive information including definitions, descriptions, and examples of the instructional strategies along with resources for special education professionals based on @Brown:2016.
+Step 1: Access the main page and locate the hyperlink titled "Systematic Instructional Procedures Guide". This link provides comprehensive information including definitions, descriptions, and examples of the instructional strategies along with resources for special education professionals based on @brown2016instruction.
 
 Step 2: Below the hyperlink, users can either upload a properly formatted .csv file or select an instructional strategy to begin a new datasheet. Available instructional strategies include task analysis, time delay, least-to-most or most-to-least prompt hierarchies, simultaneous prompting, or a customized assessment template.
 
