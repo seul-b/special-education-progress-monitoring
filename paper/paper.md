@@ -21,6 +21,9 @@ bibliography: paper.bib
 # Overview
 `Special Education Progress Monitoring` (SEPM) is a Shiny app intended to support special education professionals with interactive data collection and graphing functions. Special education professionals, including teachers, paraprofessionals, and related service providers, will be able to input details and corresponding data for each step for a student to complete through systematic instructional strategies. Available strategies include task analysis, time delay, least-to-most and most-to-least prompt hierarchies, and simultaneous prompting, as well as customized instruction or assessment data. By incorporating systematic instructional strategies, the app empowers educators to create tailored instructional plans for students while facilitating progress monitoring and data-driven decision-making.
 
+# Statement of Need
+Special education professionals often use handwritten or basic online spreadsheets to track their students' achievement progress and adapt instructional strategies to meet their students' unique needs. While there are existing tools and resources available, this app aims to provide the flexibility and interactivity necessary for real-time data collection and analysis. SEPM addresses this gap by providing a user-friendly platform that integrates evidence-based systematic instructional strategies with intuitive data input and graphing functionalities.
+
 # Information for Users
 Step 1: Access the main page and locate the hyperlink titled "Systematic Instructional Procedures Guide." This link provides comprehensive information, including definitions, descriptions, and examples of the instructional strategies, along with resources for special education professionals based on @brown2016instruction.
 
