@@ -51,12 +51,12 @@ shinyUI(fluidPage(
   
   div(
     class = "header-container",
-    span(class = "header-title", "Special Education Progress Monitoring Shiny App"),
+    span(class = "header-title", "Shiny Special Education Progress Monitoring Tool"),
     div(
       class = "header-right",
       actionButton("reload", "Reload", class = "btn btn-primary"),
       a(
-        href = "https://github.com/seul-b/special-education-progress-monitoring",
+        href = "https://github.com/yourUsername/yourRepository",
         target = "_blank",
         class = "github-icon",
         tags$i(class = "fa fa-github"),
@@ -82,7 +82,7 @@ shinyUI(fluidPage(
           "Select",
           "Task Analysis",
           "Time Delay",
-          "Least-to-Most/Most-to-Least Prompt",
+          "Errorless Learning",
           "Simultaneous Prompting",
           "Customized (50 max)"
         )
@@ -231,8 +231,8 @@ shinyUI(fluidPage(
                          ),
                        )),
       
-      # Conditional Panel for Least-to-Most/Most-to-Least Prompt Hierarchies
-      conditionalPanel(condition = "input.Strategy == 'Least-to-Most/Most-to-Least Prompt'",
+      # Conditional Panel for Errorless Learning
+      conditionalPanel(condition = "input.Strategy == 'Errorless Learning'",
                        fluidRow(
                          column(
                            width = 12,
@@ -321,6 +321,19 @@ shinyUI(fluidPage(
                                "Full Physical(FP)"
                              )
                            ),
+                           selectInput(
+                             "Corrective Prompt.SP",
+                             "Corrective Prompt",
+                             choices = c(
+                               "",
+                               "Verbal(V)",
+                               "Visual(VS)",
+                               "Gesture(G)",
+                               "Model(M)",
+                               "Partial Physical(PP)",
+                               "Full Physical(FP)"
+                             )
+                           ),
                            textInput('Latency.SP', 'Latency', ""),
                            textInput("Prompt 1", "Prompt Trial 1", value = ""),
                            textInput("Prompt 2", "Prompt Trial 2", value = ""),
@@ -345,8 +358,6 @@ shinyUI(fluidPage(
                        fluidRow(
                          column(
                            width = 12,
-                           textInput('Objective.C', 'Objective', ""),
-                           textInput('Task Demand.C', 'Task Demand', ""),
                            textInput('Input 1', 'Input 1', ""),
                            textInput('Input 2', 'Input 2', ""),
                            textInput('Input 3', 'Input 3', ""),

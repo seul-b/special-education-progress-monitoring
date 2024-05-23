@@ -78,7 +78,7 @@ shinyServer(function(input, output, session) {
           "Item 5 (Trial 5)"
         )
       )
-    } else if (strategy == "Least-to-Most/Most-to-Least Prompt") {
+    } else if (strategy == "Errorless Learning") {
       return(
         c(
           "Objective",
@@ -115,6 +115,7 @@ shinyServer(function(input, output, session) {
           "Objective",
           "Task Demand",
           "Simultaneous Prompt",
+          "Corrective Prompt",
           "Latency",
           "Prompt 1",
           "Prompt 2",
@@ -296,7 +297,7 @@ shinyServer(function(input, output, session) {
           'Item 4 (Trial 5)' = input$'Item 4 (Trial 5)',
           'Item 5 (Trial 5)' = input$'Item 5 (Trial 5)'
         )
-      } else if (input$Strategy == "Least-to-Most/Most-to-Least Prompt") {
+      } else if (input$Strategy == "Errorless Learning") {
         tibble(
           'Objective' = input$'Objective.EL',
           'Task Demand' = input$'Task Demand.EL',
@@ -330,6 +331,7 @@ shinyServer(function(input, output, session) {
           'Objective' = input$'Objective.SP',
           'Task Demand' = input$'Task Demand.SP',
           'Simultaneous Prompt' = input$'Simultaneous Prompt.SP',
+          'Corrective Prompt' = input$'Corrective Prompt.SP',
           'Latency' = input$'Latency.SP',
           'Prompt Trial 1' = input$'Prompt 1',
           'Prompt Trial 2' = input$'Prompt 2',
@@ -349,8 +351,6 @@ shinyServer(function(input, output, session) {
         )
       } else if (input$Strategy == "Customized (50 max)") {
         tibble(
-          'Objective' = input$'Objective.C',
-          'Task Demand' = input$'Task Demand.C',
           'Input 1' = input$'Input 1',
           'Input 2' = input$'Input 2',
           'Input 3' = input$'Input 3',
@@ -447,6 +447,7 @@ shinyServer(function(input, output, session) {
           "Time Delay Schedule",
           "Back-up Prompt",
           "Simultaneous Prompt",
+          "Corrective Prompt",
           paste("Prompt", 1:10)
         )
       )
