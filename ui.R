@@ -69,7 +69,7 @@ shinyUI(fluidPage(
     sidebarPanel(
       a(
         "Systematic Instructional Procedures Guide",
-        href = "https://docs.google.com/document/d/1l6PnyDNlEFu797-Pu4r7wb6dKg-t9pwwRaO-L7_1Cv0/edit?usp=sharing",
+        href = "https://docs.google.com/document/d/1EyBuzxEux3LoUZa1_0awVCVPttpzxEzZapCnFGKjIVA/edit?usp=sharing",
         target = "_blank",
         style = "font-size: 16px; margin-bottom: 25px;"
       ),
