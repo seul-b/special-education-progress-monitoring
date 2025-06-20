@@ -56,7 +56,7 @@ shinyUI(fluidPage(
       class = "header-right",
       actionButton("reload", "Reload", class = "btn btn-primary"),
       a(
-        href = "https://github.com/yourUsername/yourRepository",
+        href = "https://github.com/seul-b/special-education-progress-monitoring",
         target = "_blank",
         class = "github-icon",
         tags$i(class = "fa fa-github"),

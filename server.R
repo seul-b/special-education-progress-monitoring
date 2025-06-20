@@ -431,7 +431,7 @@ shinyServer(function(input, output, session) {
   observe({
     if (input$mainTabset == "Graph") {
       correct_response_symbol <-
-        ifelse(input$Strategy == "Time Delay", "CA", "+")
+        ifelse(input$Strategy == "Time Delay", "UC", "+")
       
       categories <- list(
         Strategy = "Strategy",
